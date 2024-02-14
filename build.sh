@@ -1,13 +1,13 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 BR_VERSION=2023.11.1
 
 echo $BR_VERSION
 
 mkdir -p out
-cp "$CONFIG_FILE" out/.config
+cp config out/.config
 
 if [ ! -d "buildroot-$BR_VERSION" ]; then
     wget "https://buildroot.org/downloads/buildroot-$BR_VERSION.tar.gz"
