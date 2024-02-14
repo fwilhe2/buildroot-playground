@@ -1,5 +1,6 @@
 name: Build Single Image
 on:
+  push:
   workflow_dispatch:
 
 jobs:
